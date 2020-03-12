@@ -1,4 +1,61 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600,700,800,900&display=swap");
+.header_title {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s; }
+
+.header_subtitle {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s; }
+
+.btn-default {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s; }
+
+.values_img {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s; }
+
+.values_card-text {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s; }
+
+.contact_title {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s; }
+
+.bg_offset {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s; }
+
+.contact_form {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s; }
+
+.ball_one, .ball_two, .ball_four, .ball_three {
+  -webkit-animation: rotation 2s infinite linear; }
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(359deg); } }
+
 body {
   margin: 0 5vw;
   overflow-x: hidden; }
@@ -20,14 +77,35 @@ body {
 
 @media only screen and (min-width: 768px) {
   .header_title {
-    font-size: 6rem; } }
+    font-size: 6rem; }
+  .products {
+    height: 50vh; } }
 
 .btn-default {
   font-size: 1.3rem;
   color: #ffffff;
   border-left: 1.5rem solid #054DA1;
   background-color: #00C2FF;
-  padding: 1rem 4rem; }
+  padding: 1rem 4rem;
+  margin: 1rem 1rem 1rem 0;
+  -webkit-transition: all ease 1s;
+  -o-transition: all ease 1s;
+  transition: all ease 1s; }
+
+.btn-default:hover {
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #054DA1;
+  -webkit-transition: all ease 1s;
+  -o-transition: all ease 1s;
+  transition: all ease 1s; }
+
+.brochure_form {
+  padding: 2rem; }
+  .brochure_form .col-12 {
+    padding: 1rem; }
+  .brochure_form .form-control {
+    font-size: 1.3rem; }
 
 footer {
   border-top: 0.2rem solid #054DA1;
@@ -47,20 +125,37 @@ footer {
     font-size: 20px;
     color: #054DA1; }
 
-.navbar .nav_img {
-  width: 12rem; }
-
-.navbar .nav-item {
-  margin-right: 2rem; }
-  .navbar .nav-item .nav-link {
-    font-size: 1.3rem;
-    font-weight: 800;
-    color: #054DA1; }
-
-.navbar .dropdown-menu .dropdown-item {
+.footer .footer_list .footer_list-link {
+  display: inline;
+  margin-right: 2rem;
   font-size: 1.3rem;
-  font-weight: 600;
+  font-weight: 600; }
+  .footer .footer_list .footer_list-link a {
+    color: #054DA1;
+    text-decoration: none; }
+
+.footer .footer_caption {
+  font-size: 1.2rem;
+  color: #959595; }
+
+.footer .footer_link {
+  font-size: 20px;
   color: #054DA1; }
+
+.navbar {
+  background-color: #fff; }
+  .navbar .nav_img {
+    width: 12rem; }
+  .navbar .nav-item {
+    margin-right: 2rem; }
+    .navbar .nav-item .nav-link {
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: #054DA1; }
+  .navbar .dropdown-menu .dropdown-item {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #054DA1; }
 
 header .header_content-text {
   padding: 10vh 0;
@@ -93,6 +188,9 @@ header .header_content-text {
 
 header .header_content-img {
   position: relative; }
+  header .header_content-img .header_img {
+    width: 70%;
+    margin: auto; }
   header .header_content-img .ball_three {
     position: absolute;
     top: 0;
@@ -149,7 +247,12 @@ header .header_content-img {
       font-size: 1.6rem; }
 
 .about_article {
-  padding: 20vh 0; }
+  padding: 5vh 0; }
+  .about_article .about_article-title {
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 5vh;
+    color: #054DA1; }
   .about_article .about_article-text {
     font-size: 1.6rem; }
 
@@ -207,14 +310,20 @@ header .header_content-img {
       font-size: 1.6rem; }
 
 .services_article {
-  padding: 20vh 0; }
+  padding: 5vh 0; }
+  .services_article .services_article-title {
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 5vh;
+    color: #054DA1; }
   .services_article .services_article-text {
     font-size: 1.6rem; }
 
 .services_features {
   padding: 10vh 0 20vh 0; }
   .services_features .services_features-img {
-    margin: 4rem 0; }
+    margin: 4rem 0;
+    width: 80%; }
   .services_features .services_features-title {
     font-size: 1.6rem;
     font-weight: 600; }
@@ -230,7 +339,7 @@ header .header_content-img {
     color: #054DA1; }
 
 .products {
-  padding: 20vh 0 10vh 0; }
+  padding-top: 20vh; }
   .products .products_title {
     font-size: 3rem;
     font-weight: 600;
@@ -276,6 +385,78 @@ header .header_content-img {
   .consulting .consulting_list {
     font-size: 1.6rem;
     margin-bottom: 2rem; }
+
+.overlay {
+  background-color: #054DA1;
+  padding: 1rem 2rem;
+  width: 20rem; }
+
+.img_size {
+  width: 30vw;
+  border-radius: 2rem;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.12);
+  margin-bottom: 2rem; }
+
+.qbook {
+  padding-bottom: 20vh; }
+  .qbook .qb_box {
+    padding: 2rem; }
+  .qbook img {
+    margin-bottom: 2rem; }
+  .qbook .products_title {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #1cac78;
+    margin-bottom: 4rem; }
+  .qbook .products_subtitle {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #1cac78; }
+  .qbook .captions {
+    font-size: 1.6rem; }
+
+.csoftware {
+  padding-bottom: 20vh; }
+  .csoftware .heading .captions {
+    margin-bottom: 4rem; }
+  .csoftware .cs_box {
+    padding: 2rem; }
+  .csoftware img {
+    margin-bottom: 2rem; }
+  .csoftware .products_title {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #054DA1;
+    margin-bottom: 2rem; }
+  .csoftware .products_subtitle {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #054DA1; }
+  .csoftware .captions {
+    font-size: 1.6rem; }
+
+.thanks .products_title {
+  margin-top: 20vh;
+  font-size: 3rem; }
+
+.thanks .products_subtitle {
+  font-size: 1.6rem; }
+
+.modal-content {
+  padding: 2rem;
+  border: 0;
+  border-radius: 0; }
+  .modal-content .modal-header, .modal-content .modal-footer {
+    border: 0; }
+
+.modal-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #054DA1; }
+
+.btn-secondary, .btn-primary {
+  font-size: 1.2rem; }
 
 header {
   padding-top: 20vh;

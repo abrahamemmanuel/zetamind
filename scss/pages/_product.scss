@@ -1,7 +1,7 @@
 // product page
 
 .products {
-	padding: 20vh 0 10vh 0;
+	padding-top: 20vh;
 
 	.products_title {
 		font-size: 3rem;
@@ -70,4 +70,115 @@
 		margin-bottom: 2rem;
 	}
 
+}
+
+.overlay {
+	background-color: $color-primary;
+	padding: 1rem 2rem;
+	width: 20rem;
+}
+
+.img_size {
+	width: 30vw;
+	border-radius: 2rem;
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.12);
+	margin-bottom: 2rem;
+}
+
+.qbook {
+	padding-bottom: 20vh;
+
+	.qb_box {
+		padding: 2rem;
+	}
+
+	img {
+		margin-bottom: 2rem;
+	}
+
+	.products_title {
+		font-size: 3rem;
+		font-weight: 600;
+		color: #1cac78;
+		margin-bottom: 4rem;
+	}
+
+	.products_subtitle {
+		font-size: 1.6rem;
+		font-weight: bold;
+		color: #1cac78;
+	}
+
+	.captions {
+		font-size: 1.6rem;
+	}
+}
+
+.csoftware {
+	padding-bottom: 20vh;
+
+	.heading {
+
+		.captions {
+			margin-bottom: 4rem;
+		}
+	}
+
+	.cs_box {
+		padding: 2rem;
+	}
+
+	img {
+		margin-bottom: 2rem;
+	}
+
+	.products_title {
+		font-size: 3rem;
+		font-weight: 600;
+		color: $color-primary;
+		margin-bottom: 2rem;
+	}
+
+	.products_subtitle {
+		font-size: 1.6rem;
+		font-weight: bold;
+		color: $color-primary;
+	}
+
+	.captions {
+		font-size: 1.6rem;
+	}
+}
+
+.thanks {
+
+	.products_title {
+		margin-top: 20vh;
+		font-size: 3rem;
+	}
+
+	.products_subtitle {
+		font-size: 1.6rem;
+	}
+
+}
+
+.modal-content {
+	padding: 2rem;
+	border: 0;
+	border-radius: 0;
+
+	.modal-header, .modal-footer {
+		border: 0;
+	}
+}
+
+.modal-title {
+	font-size: 2rem;
+	font-weight: bold;
+	color: $color-primary;
+}
+
+.btn-secondary, .btn-primary {
+	font-size: 1.2rem;
 }
