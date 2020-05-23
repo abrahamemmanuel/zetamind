@@ -15,7 +15,7 @@
     <title>Zetamind Consulting Limited</title>
 
     <link rel="shortcut icon" type="image/png" href="" />
-    <!-- Load jquery -->
+        <!-- Load jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <!-- Bootstrap core JS -->
     <script
@@ -57,7 +57,7 @@
     />
 
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-    <!--Floating WhatsApp css-->
+        <!--Floating WhatsApp css-->
     <link
       rel="stylesheet"
       href="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.css"
@@ -137,14 +137,30 @@
       <div class="container-fulid">
         <div class="row">
           <div class="col-lg-6">
-            <h2 class="products_title">Sage Business Cloud</h2>
+            <h2 class="products_title">
+              Microsoft Dynamics 365 Customer Engagement
+            </h2>
             <p class="products_subtitle">
-              Whether you are running a small or medium business, take care of
-              your finances, operations, and more with Sage Business Cloud.
+              Microsoft Dynamics 365 Customer Engagement (CE) is a leading
+              cloud-based customer relationship management (CRM) business
+              solution that can help you drive sales productivity and improve
+              the value of your marketing efforts through social insights,
+              business intelligence, and campaign management. By combining
+              industry best practices with Microsoft Dynamics 365 CE, Visionet
+              helps its clients maximize the value of their technology
+              investments.
             </p>
             <button
               href="#"
-              class="btn btn-default"
+              class="btn btn-default demo_btn"
+              data-toggle="modal"
+              data-target="#demo_form"
+            >
+              VIEW DEMO
+            </button>
+            <button
+              href="#"
+              class="btn btn-default download_btn"
               data-toggle="modal"
               data-target="#brochure_form"
             >
@@ -152,11 +168,7 @@
             </button>
           </div>
           <div class="col-lg-6 text-center">
-            <img
-              style="width: 20vw;"
-              class="products_img"
-              src="assets/Sage.png"
-            />
+            <img class="products_img" src="assets/CRM.jpg" />
           </div>
         </div>
       </div>
@@ -173,8 +185,8 @@
     >
       <div class="modal-dialog modal-dialog-centered" role="document">
         <form
-          name="sage-brochure"
-          id="sage-brochure"
+          name="dynamics-brochure"
+          id="dynamics-brochure"
           netlify-honeypot="bot-field"
           method="POST"
           netlify
@@ -264,143 +276,296 @@
       </div>
     </div>
 
-    <section class="sage">
+    <!-- demo Modal -->
+    <div
+      class="modal fade"
+      id="demo_form"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="demoTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <form
+          name="dynamics-demo"
+          id="dynamics-demo"
+          netlify-honeypot="bot-field"
+          method="POST"
+          netlify
+        >
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="demoTitle">
+                Fill form to checkout demo
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true" style="font-size: 25px;">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body demo_form">
+              <div class="row">
+                <div class="col-12">
+                  <label>Full Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter full name"
+                    required="true"
+                  />
+                </div>
+                <div class="col-12">
+                  <label>Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="Email"
+                    placeholder="Enter your email"
+                    required="true"
+                  />
+                </div>
+                <div class="col-12">
+                  <label>Mobile Number</label>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id=""
+                    placeholder="Enter your mobile number"
+                    required="true"
+                  />
+                </div>
+                <div class="col-12">
+                  <label>Address</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="Address"
+                    placeholder="Enter your Address"
+                    required="true"
+                  />
+                </div>
+                <div class="col-12">
+                  <label>Company Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter your company name"
+                    required="true"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+              <input
+                type="submit"
+                class="btn btn-primary"
+                value=" Send to download"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <section class="produce">
       <div class="container-fulid">
         <div class="row">
-          <div class="col-lg-12">
-            <h4 class="products_title">Business management</h4>
+          <div class="col-12">
+            <h4 class="produce_title">
+              <strong>Included Applications</strong>
+            </h4>
+            <div class="line"></div>
           </div>
-          <div class="col-lg-6">
-            <span class="box">Sage X3</span>
-            <p class="captions red">
-              Sage Business Cloud is changing how businesses compete and grow,
-              by delivering faster, simpler and flexible financial, supply chain
-              and production management at a fraction of the cost and complexity
-              of typical ERP systems.
-            </p>
-          </div>
-          <div class="col-lg-6"></div>
-          <div class="col-lg-4">
-            <p class="products_subtitle">Financial management</p>
-            <span class="captions"
-              >Control your bottom line with accuracy and real-time global
-              visibility, while meeting local requirements.</span
-            >
+          <div class="col-6">
             <ul>
-              <li class="captions">Budgets and accounting</li>
-              <li class="captions">Fixed assets</li>
-              <li class="captions">Financial reporting</li>
-            </ul>
-          </div>
-          <div class="col-lg-4">
-            <p class="products_subtitle">Supply chain management</p>
-            <span class="captions"
-              >Keep up with demand and ensure optimal efficiencies through
-              real-time monitoring of inventory.</span
-            >
-            <ul>
-              <li class="captions">Purchasing</li>
-              <li class="captions">Inventory management</li>
-              <li class="captions">Sales management</li>
-              <li class="captions">Customer service</li>
-            </ul>
-          </div>
-          <div class="col-lg-4">
-            <p class="products_subtitle">Production management</p>
-            <span class="captions"
-              >Market quickly and efficiently by managing all your manufacturing
-              processes with one system.</span
-            >
-            <ul>
-              <li class="captions">BOM planning</li>
-              <li class="captions">Shop floor control</li>
-              <li class="captions">Quality control</li>
-              <li class="captions">Project management</li>
+              <li>
+                <h4>
+                  Microsoft Dynamics 365 for Sales
+                </h4>
+              </li>
+              <br />
+              <li>
+                <h4>
+                  Microsoft Dynamics 365 for Sales
+                </h4>
+              </li>
+              <br />
+              <li>
+                <h4>
+                  Microsoft Dynamics 365 for Project Service Automation
+                </h4>
+              </li>
+              <br />
+              <li>
+                <h4>
+                  Microsoft Dynamics 365 for Field Service
+                </h4>
+              </li>
+              <br />
+              <li>
+                <h4>
+                  Microsoft Social Engagement
+                </h4>
+              </li>
+              <br />
+              <li>
+                <h4>
+                  Microsoft PowerApps
+                </h4>
+              </li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="sage">
+    <section class="produce">
       <div class="container-fulid">
         <div class="row">
-          <div class="col-lg-12">
-            <h4 class="products_title">
-              Solutions for accountants and partners
+          <div class="col-12">
+            <h4 class="produce_title">
+              <strong>Business Benefits</strong>
             </h4>
+            <div class="line"></div>
           </div>
-          <div class="col-lg-12">
-            <span class="box">Book keeping for clients</span>
-            <p class="captions red">
-              No matter how you, or your clients, choose to work - all Sage
-              solutions are 100 % Making Tax Digital and GDPR ready.
-            </p>
-            <div class="row">
-              <div class="col-lg-4">
-                <p class="products_subtitle">Unlock efficiencies</p>
-                <span class="captions"
-                  >From direct bank feeds to receipt capture, we are investing
-                  heavily to automate all the manual data entry across your
-                  practice. Deep accounting functionality allows you to maximise
-                  your productivity.</span
-                >
-              </div>
-              <div class="col-lg-4">
-                <p class="products_subtitle">Ensure compliance</p>
-                <span class="captions"
-                  >Confidently calculate and submit VAT returns directly. Link
-                  up with our Final Accounts, Corporation Tax, and Personal Tax
-                  applications to prepare and file accounts and tax returns with
-                  ease.</span
-                >
-              </div>
-              <div class="col-lg-4">
-                <p class="products_subtitle">Add more value</p>
-                <span class="captions green"
-                  >Always being connected to live client data and powerful
-                  reporting provides opportunities for you to collaborate and
-                  offer more proactive and forward-looking advice.</span
-                >
-              </div>
-            </div>
+          <div class="col-6">
+            <h3>
+              Microsoft Dynamics 365 CE streamlines the way your employees
+              communicate with customers and enhances their ability to
+              collaborate. Here’s why Microsoft Dynamics 365 CE is one of the
+              most sought-after CRM solutions in the industry:
+            </h3>
+            <br />
+            <ul>
+              <li>
+                <h4>
+                  Assist customers anywhere, from any device
+                </h4>
+              </li>
+              <br />
+              <li>
+                <h4>
+                  Build your network and deepen customer relationships with
+                  social insights
+                </h4>
+              </li>
+              <br />
+              <li>
+                <h4>
+                  Create meaningful, personalized customer experiences to
+                  improve sales growth
+                </h4>
+              </li>
+              <br />
+              <li>
+                <h4>
+                  Team collaboration helps your sales team sell as a team
+                </h4>
+              </li>
+              <br />
+              <li>
+                <h4>
+                  Work smarter to close more deals by leveraging easy-to-design
+                  process flows
+                </h4>
+              </li>
+              <br />
+              <li>
+                <h4>
+                  Use configurable dashboards and data visualization tools to
+                  gain actionable insights
+                </h4>
+              </li>
+              <br />
+              <li>
+                <h4>
+                  Analyze your sales data and discover relevant information
+                  using interactive charts
+                </h4>
+              </li>
+              <br />
+              <li>
+                <h4>
+                  Launch multi-phase marketing campaigns across multiple
+                  channels to enhance customer engagement
+                </h4>
+              </li>
+            </ul>
+            <br />
           </div>
         </div>
-        <div class="row py-5">
-          <div class="col-lg-12">
-            <span class="box">Education</span>
-            <p class="products_subtitle red">Create customized invoices</p>
-            <p class="captions">
-              Expert advice, support, and education, Everything you need in one
-              place.
-            </p>
-            <div class="row">
-              <div class="col-lg-4">
-                <p class="products_subtitle">Accountant and bookkeeper hub</p>
-                <span class="captions"
-                  >We are committed to helping you and your clients. Our hub for
-                  accountants and bookkeepers gives you one place to access all
-                  the latest news, advice and support on offer.</span
-                >
-              </div>
-              <div class="col-lg-4">
-                <p class="products_subtitle">Help centre</p>
-                <span class="captions"
-                  >Our help centre has everything you need to help you get the
-                  most from your software 24/7. Here you can gain access to help
-                  files, community, email us your queries, or speak to us on web
-                  chat or phone.</span
-                >
-              </div>
-              <div class="col-lg-4">
-                <p class="products_subtitle">Community</p>
-                <span class="captions"
-                  >Got a question? Ask everyone. Get quick answers to your
-                  questions from accounting professionals and Sage experts, just
-                  like you in the community.</span
-                >
-              </div>
-            </div>
+      </div>
+    </section>
+
+    <section class="produce">
+      <div class="container-fulid">
+        <div class="row">
+          <div class="col-12">
+            <h4 class="produce_title">
+              <strong>Why Us?</strong>
+            </h4>
+            <div class="line"></div>
+          </div>
+          <div class="col-6">
+            <h3>
+              Zetamind Consulting can help align marketing, sales, and customer
+              service operations with your customers’ requirements. With the
+              Microsoft Dynamics 365 CE, you can start increasing your
+              organization’s productivity in just 5 minutes. Streamline your CRM
+              implementation and reduce your IT department’s workload with a CRM
+              solution that is hosted, updated, secured, and maintained by
+              Microsoft.
+            </h3>
+            <br />
+            <ul>
+              <li>
+                <h4>
+                  Centralized customer information can be accessed anywhere,
+                  from any device
+                </h4>
+              </li>
+              <br />
+              <li>
+                <h4>
+                  Streamlined business workflows
+                </h4>
+              </li>
+              <br />
+              <li>
+                <h4>
+                  Create meaningful, personalized customer experiences to
+                  improve sales growth
+                </h4>
+              </li>
+              <br />
+              <li>
+                <h4>
+                  Quick and easy implementation
+                </h4>
+              </li>
+              <br />
+              <li>
+                <h4>
+                  Easy-to-manage and highly scalable per-user licenses
+                </h4>
+              </li>
+              <br />
+              <li>
+                <h4>
+                  Reduces IT expenses and in-house maintenance efforts
+                </h4>
+              </li>
           </div>
         </div>
       </div>
@@ -425,16 +590,8 @@
             <li class="footer_list-link">
               <a href="industry.html">Industry</a>
             </li>
-            <li class="footer_list-link">
-              <a href="dynamics-365-bc.html"
-                >Microsoft Dynamics 365 Business-Central</a
-              >
-            </li>
-            <li class="footer_list-link">
-              <a href="dynamics-365-customer-engagement.html"
-                >Microsoft Dynamics 365 Customer-Engagement</a
-              >
-            </li>
+					<li class="footer_list-link"><a href="dynamics-365-bc.html">Microsoft Dynamics 365 Business-Central</a></li>
+					<li class="footer_list-link"><a href="dynamics-365-customer-engagement.html">Microsoft Dynamics 365 Customer-Engagement</a></li>
             <li class="footer_list-link">
               <a href="enterprise-x.html">Enterprise X</a>
             </li>
@@ -476,9 +633,9 @@
         </div>
       </div>
     </footer>
-
     <!--Div where the WhatsApp will be rendered-->
     <div id="WAButton" class="whatsapp"></div>
+
     <!-- custom script -->
     <script>
       window.sr = ScrollReveal();
@@ -500,10 +657,10 @@
         distance: '10px',
       });
 
-      sr.reveal('.btn-default', {
+      sr.reveal('.demo_btn', {
         duration: 2000,
         origin: 'bottom',
-        distance: '20px',
+        distance: '10px',
       });
 
       sr.reveal('.download_btn', {
@@ -512,15 +669,9 @@
         distance: '10px',
       });
 
-      sr.reveal('.products_img', {
+      sr.reveal('.line', {
         duration: 2000,
-        origin: 'bottom',
-        distance: '10px',
-      });
-
-      sr.reveal('.p_img', {
-        duration: 1000,
-        origin: 'bottom',
+        origin: 'left',
         distance: '10px',
       });
 
@@ -530,7 +681,7 @@
         distance: '10px',
       });
 
-      sr.reveal('.captions', {
+      sr.reveal('.produce_caption', {
         duration: 2000,
         origin: 'bottom',
         distance: '10px',
