@@ -7,6 +7,15 @@ $('#dynamics-brochure').submit(function(e) {
   });
 });
 
+$('#customer-engage').submit(function (e) {
+  e.preventDefault();
+
+  var $form = $(this);
+  $.post($form.attr('action'), $form.serialize()).then(function () {
+    window.location = '../thanks.html/';
+  });
+});
+
 $('#enterprise-brochure').submit(function(e) {
   e.preventDefault();
 
