@@ -1,571 +1,597 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+		<meta name="description" content="" />
+		<meta name="author" content="" />
 
-    <!-- taskbar -->
-    <meta name="theme-color" content="#ffffff" />
+		<!-- taskbar -->
+		<meta name="theme-color" content="#ffffff" />
 
-    <title>Zetamind Consulting Limited</title>
+		<title>Zetamind Consulting Limited</title>
 
-    <link rel="shortcut icon" type="image/png" href="" />
-    <!-- Load jquery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <!-- Bootstrap core JS -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
+		<link rel="shortcut icon" type="image/png" href="" />
+		<!-- Load jquery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<!-- Bootstrap core JS -->
+		<script
+			src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+			crossorigin="anonymous"
+		></script>
 
-    <!-- Bootstrap core CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
+		<!-- Bootstrap core CSS -->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous"
+		/>
 
-    <!-- Font Awesome CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+		<!-- Font Awesome CSS -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
 
-    <!-- Stylesheet -->
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
+		<!-- Stylesheet -->
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
-    />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+		/>
 
-    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-    <!--Floating WhatsApp css-->
-    <link
-      rel="stylesheet"
-      href="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.css"
-    />
-    <!--Floating WhatsApp javascript-->
-    <script
-      type="text/javascript"
-      src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.js"
-    ></script>
-  </head>
-  <body id="homepage">
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-      <a class="navbar-brand" href="index.html">
-        <img class="nav_img" src="assets/logo.jpg" />
-        <span class="sr-only">(current)</span>
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarTogglerDemo02"
-        aria-controls="navbarTogglerDemo02"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+		<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+		<!--Floating WhatsApp css-->
+		<link
+			rel="stylesheet"
+			href="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.css"
+		/>
+		<!--Floating WhatsApp javascript-->
+		<script
+			type="text/javascript"
+			src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.js"
+		></script>
+	</head>
+	<body id="homepage">
+		<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+			<a class="navbar-brand" href="index.html">
+				<img class="nav_img" src="assets/logo.jpg" />
+				<span class="sr-only">(current)</span>
+			</a>
+			<button
+				class="navbar-toggler"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navbarTogglerDemo02"
+				aria-controls="navbarTogglerDemo02"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			>
+				<span class="navbar-toggler-icon"></span>
+			</button>
 
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">ABOUT</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="industry.html">INDUSTRY</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              data-toggle="dropdown"
-              href="#"
-              role="button"
-              aria-haspopup="true"
-              aria-expanded="false"
-              >PRODUCTS</a
-            >
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="dynamics-365-bc.html"
-                >Dynamics 365 Business-Central</a
-              >
-              <div class="dropdown-divider"></div>
-              <a
-                class="dropdown-item"
-                href="dynamics-365-customer-engagement.html"
-                >Dynamics 365 Customer-Engagement</a
-              >
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="enterprise-x.html">Enterprise X</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="quick-book.html">Quick Book</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="sage.html">Sage</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="odoo-erp.html">Odoo</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="custom-software.html"
-                >Custom Software</a
-              >
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">CONTACT</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+			<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+				<ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+					<li class="nav-item">
+						<a class="nav-link" href="about.html">ABOUT</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="industry.html">INDUSTRY</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a
+							class="nav-link dropdown-toggle"
+							data-toggle="dropdown"
+							href="#"
+							role="button"
+							aria-haspopup="true"
+							aria-expanded="false"
+							>PRODUCTS</a
+						>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="dynamics-365-bc.html"
+								>Dynamics 365 Business-Central</a
+							>
+							<div class="dropdown-divider"></div>
+							<a
+								class="dropdown-item"
+								href="dynamics-365-customer-engagement.html"
+								>Dynamics 365 Customer-Engagement</a
+							>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="quick-book.html"
+								>Quick Book</a
+							>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="sage.html">Sage</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="odoo-erp.html"
+								>Odoo</a
+							>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="custom-software.html"
+								>Custom Software</a
+							>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contact.html">CONTACT</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
 
-    <header class="products">
-      <div class="container-fulid">
-        <div class="row">
-          <div class="col-lg-6">
-            <h2 class="products_title">Sage Business Cloud</h2>
-            <p class="products_subtitle">
-              Whether you are running a small or medium business, take care of
-              your finances, operations, and more with Sage Business Cloud.
-            </p>
-            <a
-              href="https://brochure.zetamindgroup.com/"
-              class="btn btn-default download_btn"
-            >
-              DOWNLOAD BROCHURE
-            </a>
-          </div>
-          <div class="col-lg-6 text-center">
-            <img
-              style="width: 20vw;"
-              class="products_img"
-              src="assets/Sage.png"
-            />
-          </div>
-        </div>
-      </div>
-    </header>
+		<header class="products">
+			<div class="container-fulid">
+				<div class="row">
+					<div class="col-lg-6">
+						<h2 class="products_title">Sage Business Cloud</h2>
+						<p class="products_subtitle">
+							Whether you are running a small or medium business,
+							take care of your finances, operations, and more
+							with Sage Business Cloud.
+						</p>
+						<a
+							href="https://brochure.zetamindgroup.com/"
+							class="btn btn-default download_btn"
+						>
+							DOWNLOAD BROCHURE
+						</a>
+					</div>
+					<div class="col-lg-6 text-center">
+						<img
+							style="width: 20vw"
+							class="products_img"
+							src="assets/Sage.png"
+						/>
+					</div>
+				</div>
+			</div>
+		</header>
 
-    <!-- brochure Modal -->
-    <div
-      class="modal fade"
-      id="brochure_form"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="brochureTitle"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered" role="document">
-        <form
-          name="sage-brochure"
-          id="sage-brochure"
-          netlify-honeypot="bot-field"
-          method="POST"
-          netlify
-        >
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="brochureTitle">
-                Fill form to continue
-              </h5>
-              <button
-                type="button"
-                class="close"
-                data-dismiss="modal"
-                aria-label="Close"
-              >
-                <span aria-hidden="true" style="font-size: 25px;">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body brochure_form">
-              <div class="row">
-                <div class="col-12">
-                  <label>Full Name</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Enter full name"
-                    required="true"
-                  />
-                </div>
-                <div class="col-12">
-                  <label>Email</label>
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="Email"
-                    placeholder="Enter your email"
-                    required="true"
-                  />
-                </div>
-                <div class="col-12">
-                  <label>Mobile Number</label>
-                  <input
-                    type="number"
-                    class="form-control"
-                    id=""
-                    placeholder="Enter your mobile number"
-                    required="true"
-                  />
-                </div>
-                <div class="col-12">
-                  <label>Address</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="Address"
-                    placeholder="Enter your Address"
-                    required="true"
-                  />
-                </div>
-                <div class="col-12">
-                  <label>Company Name</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Enter your company name"
-                    required="true"
-                  />
-                </div>
-              </div>
-            </div>
-            <div class="modal-footer">
-              <button
-                type="button"
-                class="btn btn-secondary"
-                data-dismiss="modal"
-              >
-                Close
-              </button>
-              <input
-                type="submit"
-                class="btn btn-primary"
-                value=" Send to download"
-              />
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
+		<!-- brochure Modal -->
+		<div
+			class="modal fade"
+			id="brochure_form"
+			tabindex="-1"
+			role="dialog"
+			aria-labelledby="brochureTitle"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<form
+					name="sage-brochure"
+					id="sage-brochure"
+					netlify-honeypot="bot-field"
+					method="POST"
+					netlify
+				>
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="brochureTitle">
+								Fill form to continue
+							</h5>
+							<button
+								type="button"
+								class="close"
+								data-dismiss="modal"
+								aria-label="Close"
+							>
+								<span aria-hidden="true" style="font-size: 25px"
+									>&times;</span
+								>
+							</button>
+						</div>
+						<div class="modal-body brochure_form">
+							<div class="row">
+								<div class="col-12">
+									<label>Full Name</label>
+									<input
+										type="text"
+										class="form-control"
+										placeholder="Enter full name"
+										required="true"
+									/>
+								</div>
+								<div class="col-12">
+									<label>Email</label>
+									<input
+										type="email"
+										class="form-control"
+										id="Email"
+										placeholder="Enter your email"
+										required="true"
+									/>
+								</div>
+								<div class="col-12">
+									<label>Mobile Number</label>
+									<input
+										type="number"
+										class="form-control"
+										id=""
+										placeholder="Enter your mobile number"
+										required="true"
+									/>
+								</div>
+								<div class="col-12">
+									<label>Address</label>
+									<input
+										type="text"
+										class="form-control"
+										id="Address"
+										placeholder="Enter your Address"
+										required="true"
+									/>
+								</div>
+								<div class="col-12">
+									<label>Company Name</label>
+									<input
+										type="text"
+										class="form-control"
+										placeholder="Enter your company name"
+										required="true"
+									/>
+								</div>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button
+								type="button"
+								class="btn btn-secondary"
+								data-dismiss="modal"
+							>
+								Close
+							</button>
+							<input
+								type="submit"
+								class="btn btn-primary"
+								value=" Send to download"
+							/>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
 
-    <section class="sage">
-      <div class="container-fulid">
-        <div class="row">
-          <div class="col-lg-12">
-            <h4 class="products_title">Business management</h4>
-          </div>
-          <div class="col-lg-6">
-            <span class="box">Sage X3</span>
-            <p class="captions red">
-              Sage Business Cloud is changing how businesses compete and grow,
-              by delivering faster, simpler and flexible financial, supply chain
-              and production management at a fraction of the cost and complexity
-              of typical ERP systems.
-            </p>
-          </div>
-          <div class="col-lg-6"></div>
-          <div class="col-lg-4">
-            <p class="products_subtitle">Financial management</p>
-            <span class="captions"
-              >Control your bottom line with accuracy and real-time global
-              visibility, while meeting local requirements.</span
-            >
-            <ul>
-              <li class="captions">Budgets and accounting</li>
-              <li class="captions">Fixed assets</li>
-              <li class="captions">Financial reporting</li>
-            </ul>
-          </div>
-          <div class="col-lg-4">
-            <p class="products_subtitle">Supply chain management</p>
-            <span class="captions"
-              >Keep up with demand and ensure optimal efficiencies through
-              real-time monitoring of inventory.</span
-            >
-            <ul>
-              <li class="captions">Purchasing</li>
-              <li class="captions">Inventory management</li>
-              <li class="captions">Sales management</li>
-              <li class="captions">Customer service</li>
-            </ul>
-          </div>
-          <div class="col-lg-4">
-            <p class="products_subtitle">Production management</p>
-            <span class="captions"
-              >Market quickly and efficiently by managing all your manufacturing
-              processes with one system.</span
-            >
-            <ul>
-              <li class="captions">BOM planning</li>
-              <li class="captions">Shop floor control</li>
-              <li class="captions">Quality control</li>
-              <li class="captions">Project management</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+		<section class="sage">
+			<div class="container-fulid">
+				<div class="row">
+					<div class="col-lg-12">
+						<h4 class="products_title">Business management</h4>
+					</div>
+					<div class="col-lg-6">
+						<span class="box">Sage X3</span>
+						<p class="captions red">
+							Sage Business Cloud is changing how businesses
+							compete and grow, by delivering faster, simpler and
+							flexible financial, supply chain and production
+							management at a fraction of the cost and complexity
+							of typical ERP systems.
+						</p>
+					</div>
+					<div class="col-lg-6"></div>
+					<div class="col-lg-4">
+						<p class="products_subtitle">Financial management</p>
+						<span class="captions"
+							>Control your bottom line with accuracy and
+							real-time global visibility, while meeting local
+							requirements.</span
+						>
+						<ul>
+							<li class="captions">Budgets and accounting</li>
+							<li class="captions">Fixed assets</li>
+							<li class="captions">Financial reporting</li>
+						</ul>
+					</div>
+					<div class="col-lg-4">
+						<p class="products_subtitle">Supply chain management</p>
+						<span class="captions"
+							>Keep up with demand and ensure optimal efficiencies
+							through real-time monitoring of inventory.</span
+						>
+						<ul>
+							<li class="captions">Purchasing</li>
+							<li class="captions">Inventory management</li>
+							<li class="captions">Sales management</li>
+							<li class="captions">Customer service</li>
+						</ul>
+					</div>
+					<div class="col-lg-4">
+						<p class="products_subtitle">Production management</p>
+						<span class="captions"
+							>Market quickly and efficiently by managing all your
+							manufacturing processes with one system.</span
+						>
+						<ul>
+							<li class="captions">BOM planning</li>
+							<li class="captions">Shop floor control</li>
+							<li class="captions">Quality control</li>
+							<li class="captions">Project management</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
 
-    <section class="sage">
-      <div class="container-fulid">
-        <div class="row">
-          <div class="col-lg-12">
-            <h4 class="products_title">
-              Solutions for accountants and partners
-            </h4>
-          </div>
-          <div class="col-lg-12">
-            <span class="box">Book keeping for clients</span>
-            <p class="captions red">
-              No matter how you, or your clients, choose to work - all Sage
-              solutions are 100 % Making Tax Digital and GDPR ready.
-            </p>
-            <div class="row">
-              <div class="col-lg-4">
-                <p class="products_subtitle">Unlock efficiencies</p>
-                <span class="captions"
-                  >From direct bank feeds to receipt capture, we are investing
-                  heavily to automate all the manual data entry across your
-                  practice. Deep accounting functionality allows you to maximise
-                  your productivity.</span
-                >
-              </div>
-              <div class="col-lg-4">
-                <p class="products_subtitle">Ensure compliance</p>
-                <span class="captions"
-                  >Confidently calculate and submit VAT returns directly. Link
-                  up with our Final Accounts, Corporation Tax, and Personal Tax
-                  applications to prepare and file accounts and tax returns with
-                  ease.</span
-                >
-              </div>
-              <div class="col-lg-4">
-                <p class="products_subtitle">Add more value</p>
-                <span class="captions green"
-                  >Always being connected to live client data and powerful
-                  reporting provides opportunities for you to collaborate and
-                  offer more proactive and forward-looking advice.</span
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row py-5">
-          <div class="col-lg-12">
-            <span class="box">Education</span>
-            <p class="products_subtitle red">Create customized invoices</p>
-            <p class="captions">
-              Expert advice, support, and education, Everything you need in one
-              place.
-            </p>
-            <div class="row">
-              <div class="col-lg-4">
-                <p class="products_subtitle">Accountant and bookkeeper hub</p>
-                <span class="captions"
-                  >We are committed to helping you and your clients. Our hub for
-                  accountants and bookkeepers gives you one place to access all
-                  the latest news, advice and support on offer.</span
-                >
-              </div>
-              <div class="col-lg-4">
-                <p class="products_subtitle">Help centre</p>
-                <span class="captions"
-                  >Our help centre has everything you need to help you get the
-                  most from your software 24/7. Here you can gain access to help
-                  files, community, email us your queries, or speak to us on web
-                  chat or phone.</span
-                >
-              </div>
-              <div class="col-lg-4">
-                <p class="products_subtitle">Community</p>
-                <span class="captions"
-                  >Got a question? Ask everyone. Get quick answers to your
-                  questions from accounting professionals and Sage experts, just
-                  like you in the community.</span
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+		<section class="sage">
+			<div class="container-fulid">
+				<div class="row">
+					<div class="col-lg-12">
+						<h4 class="products_title">
+							Solutions for accountants and partners
+						</h4>
+					</div>
+					<div class="col-lg-12">
+						<span class="box">Book keeping for clients</span>
+						<p class="captions red">
+							No matter how you, or your clients, choose to work -
+							all Sage solutions are 100 % Making Tax Digital and
+							GDPR ready.
+						</p>
+						<div class="row">
+							<div class="col-lg-4">
+								<p class="products_subtitle">
+									Unlock efficiencies
+								</p>
+								<span class="captions"
+									>From direct bank feeds to receipt capture,
+									we are investing heavily to automate all the
+									manual data entry across your practice. Deep
+									accounting functionality allows you to
+									maximise your productivity.</span
+								>
+							</div>
+							<div class="col-lg-4">
+								<p class="products_subtitle">
+									Ensure compliance
+								</p>
+								<span class="captions"
+									>Confidently calculate and submit VAT
+									returns directly. Link up with our Final
+									Accounts, Corporation Tax, and Personal Tax
+									applications to prepare and file accounts
+									and tax returns with ease.</span
+								>
+							</div>
+							<div class="col-lg-4">
+								<p class="products_subtitle">Add more value</p>
+								<span class="captions green"
+									>Always being connected to live client data
+									and powerful reporting provides
+									opportunities for you to collaborate and
+									offer more proactive and forward-looking
+									advice.</span
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row py-5">
+					<div class="col-lg-12">
+						<span class="box">Education</span>
+						<p class="products_subtitle red">
+							Create customized invoices
+						</p>
+						<p class="captions">
+							Expert advice, support, and education, Everything
+							you need in one place.
+						</p>
+						<div class="row">
+							<div class="col-lg-4">
+								<p class="products_subtitle">
+									Accountant and bookkeeper hub
+								</p>
+								<span class="captions"
+									>We are committed to helping you and your
+									clients. Our hub for accountants and
+									bookkeepers gives you one place to access
+									all the latest news, advice and support on
+									offer.</span
+								>
+							</div>
+							<div class="col-lg-4">
+								<p class="products_subtitle">Help centre</p>
+								<span class="captions"
+									>Our help centre has everything you need to
+									help you get the most from your software
+									24/7. Here you can gain access to help
+									files, community, email us your queries, or
+									speak to us on web chat or phone.</span
+								>
+							</div>
+							<div class="col-lg-4">
+								<p class="products_subtitle">Community</p>
+								<span class="captions"
+									>Got a question? Ask everyone. Get quick
+									answers to your questions from accounting
+									professionals and Sage experts, just like
+									you in the community.</span
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-    <footer>
-      <div class="row">
-        <div class="col-lg-5">
-          <img class="brand_img1" src="assets/microsoft partners.png" />
-          <img class="brand_img" src="assets/MS-Azure.png" />
-          <img class="brand_img" src="assets/google-cloud-platform.png" />
-          <img class="brand_img2" src="assets/Office_365_logo.png" />
-          <img class="brand_img3" src="assets/zoho.png" />
-           <img class="brand_img3" src="assets/Odoo.jpg" />
-          <img class="brand_img4" src="assets/amazonws.png" />
-        </div>
-        <div class="col-lg-3">
-          <h5 class="footer_heading-text">
-            <a href="index.html">Zetamind Group</a>
-          </h5>
-          <ul class="footer_list list-unstyled">
-            <li class="footer_list-link"><a href="about.html">About</a></li>
-            <li class="footer_list-link">
-              <a href="industry.html">Industry</a>
-            </li>
-            <li class="footer_list-link">
-              <a href="dynamics-365-bc.html"
-                >Microsoft Dynamics 365 Business-Central</a
-              >
-            </li>
-            <li class="footer_list-link">
-              <a href="dynamics-365-customer-engagement.html"
-                >Microsoft Dynamics 365 Customer-Engagement</a
-              >
-            </li>
-            <li class="footer_list-link">
-              <a href="enterprise-x.html">Enterprise X</a>
-            </li>
-            <li class="footer_list-link">
-              <a href="quick-book.html">QuickBooks</a>
-            </li>
-            <li class="footer_list-link"><a href="sage.html">Sage</a></li>
-            <li class="footer_list-link">
-              <a href="custom-software.html">Custom Software</a>
-            </li>
-            <li class="footer_list-link">
-              <a href="odoo-erp.html">Odoo</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-lg-4">
-          <h5 class="footer_heading-text">Office Address</h5>
-          <p class="text">
-            1st Floor Block A (rightwing) No.334 Ikorodu Road, Idi-iroko Bus
-            Stop, Lagos State Nigeria Co. Reg. 1459637
-          </p>
-          <p class="text">Email: info@zetamindgroup.com</p>
-          <p class="text">Website: www.zetamindroup.com</p>
-          <a class="footer_link" href="#"
-            ><ion-icon name="logo-facebook"></ion-icon
-          ></a>
-          <a class="footer_link" href="#"
-            ><ion-icon name="logo-linkedin"></ion-icon
-          ></a>
-          <a class="footer_link" href="#"
-            ><ion-icon name="logo-skype"></ion-icon
-          ></a>
-          <a class="footer_link" href="#"
-            ><ion-icon name="logo-slack"></ion-icon
-          ></a>
-          <a class="footer_link" href="#"
-            ><ion-icon name="logo-twitter"></ion-icon
-          ></a>
-          <a class="footer_link" href="#"
-            ><ion-icon name="logo-windows"></ion-icon
-          ></a>
-        </div>
-      </div>
-    </footer>
+		<footer>
+			<div class="row">
+				<div class="col-lg-5">
+					<img
+						class="brand_img1"
+						src="assets/microsoft partners.png"
+					/>
+					<img class="brand_img" src="assets/MS-Azure.png" />
+					<img
+						class="brand_img"
+						src="assets/google-cloud-platform.png"
+					/>
+					<img class="brand_img2" src="assets/Office_365_logo.png" />
+					<img class="brand_img3" src="assets/zoho.png" />
+					<img class="brand_img3" src="assets/Odoo.jpg" />
+					<img class="brand_img4" src="assets/amazonws.png" />
+				</div>
+				<div class="col-lg-3">
+					<h5 class="footer_heading-text">
+						<a href="index.html">Zetamind Group</a>
+					</h5>
+					<ul class="footer_list list-unstyled">
+						<li class="footer_list-link">
+							<a href="about.html">About</a>
+						</li>
+						<li class="footer_list-link">
+							<a href="industry.html">Industry</a>
+						</li>
+						<li class="footer_list-link">
+							<a href="dynamics-365-bc.html"
+								>Microsoft Dynamics 365 Business-Central</a
+							>
+						</li>
+						<li class="footer_list-link">
+							<a href="dynamics-365-customer-engagement.html"
+								>Microsoft Dynamics 365 Customer-Engagement</a
+							>
+						</li>
+						<li class="footer_list-link">
+							<a href="quick-book.html">QuickBooks</a>
+						</li>
+						<li class="footer_list-link">
+							<a href="sage.html">Sage</a>
+						</li>
+						<li class="footer_list-link">
+							<a href="custom-software.html">Custom Software</a>
+						</li>
+						<li class="footer_list-link">
+							<a href="odoo-erp.html">Odoo</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-4">
+					<h5 class="footer_heading-text">Office Address</h5>
+					<p class="text">
+						1st Floor Block A (rightwing) No.334 Ikorodu Road,
+						Idi-iroko Bus Stop, Lagos State Nigeria Co. Reg. 1459637
+					</p>
+					<p class="text">Email: info@zetamindgroup.com</p>
+					<p class="text">Website: www.zetamindroup.com</p>
+					<a
+						class="footer_link"
+						href="https://web.facebook.com/zetamind.zetamind"
+						><ion-icon name="logo-facebook"></ion-icon
+					></a>
+					<a
+						class="footer_link"
+						href="https://www.instagram.com/zetamindconsultinglimited/"
+						><ion-icon name="logo-instagram"></ion-icon
+					></a>
+					<a class="footer_link" href="https://twitter.com/zetamind"
+						><ion-icon name="logo-twitter"></ion-icon
+					></a>
+				</div>
+			</div>
+		</footer>
 
-    <!--Div where the WhatsApp will be rendered-->
-    <div id="WAButton" class="whatsapp"></div>
-    <!-- custom script -->
-    <script>
-      window.sr = ScrollReveal();
-      sr.reveal('.navbar', {
-        duration: 2000,
-        origin: 'bottom',
-        distance: '10px',
-      });
+		<!--Div where the WhatsApp will be rendered-->
+		<div id="WAButton" class="whatsapp"></div>
+		<!-- custom script -->
+		<script>
+			window.sr = ScrollReveal();
+			sr.reveal('.navbar', {
+				duration: 2000,
+				origin: 'bottom',
+				distance: '10px',
+			});
 
-      sr.reveal('.products_title', {
-        duration: 2000,
-        origin: 'bottom',
-        distance: '10px',
-      });
+			sr.reveal('.products_title', {
+				duration: 2000,
+				origin: 'bottom',
+				distance: '10px',
+			});
 
-      sr.reveal('.products_subtitle', {
-        duration: 2000,
-        origin: 'bottom',
-        distance: '10px',
-      });
+			sr.reveal('.products_subtitle', {
+				duration: 2000,
+				origin: 'bottom',
+				distance: '10px',
+			});
 
-      sr.reveal('.btn-default', {
-        duration: 2000,
-        origin: 'bottom',
-        distance: '20px',
-      });
+			sr.reveal('.btn-default', {
+				duration: 2000,
+				origin: 'bottom',
+				distance: '20px',
+			});
 
-      sr.reveal('.download_btn', {
-        duration: 2000,
-        origin: 'bottom',
-        distance: '10px',
-      });
+			sr.reveal('.download_btn', {
+				duration: 2000,
+				origin: 'bottom',
+				distance: '10px',
+			});
 
-      sr.reveal('.products_img', {
-        duration: 2000,
-        origin: 'bottom',
-        distance: '10px',
-      });
+			sr.reveal('.products_img', {
+				duration: 2000,
+				origin: 'bottom',
+				distance: '10px',
+			});
 
-      sr.reveal('.p_img', {
-        duration: 1000,
-        origin: 'bottom',
-        distance: '10px',
-      });
+			sr.reveal('.p_img', {
+				duration: 1000,
+				origin: 'bottom',
+				distance: '10px',
+			});
 
-      sr.reveal('.produce_subheaders', {
-        duration: 2000,
-        origin: 'bottom',
-        distance: '10px',
-      });
+			sr.reveal('.produce_subheaders', {
+				duration: 2000,
+				origin: 'bottom',
+				distance: '10px',
+			});
 
-      sr.reveal('.captions', {
-        duration: 2000,
-        origin: 'bottom',
-        distance: '10px',
-      });
+			sr.reveal('.captions', {
+				duration: 2000,
+				origin: 'bottom',
+				distance: '10px',
+			});
 
-      sr.reveal('.consulting_title', {
-        duration: 2000,
-        origin: 'bottom',
-        distance: '10px',
-      });
+			sr.reveal('.consulting_title', {
+				duration: 2000,
+				origin: 'bottom',
+				distance: '10px',
+			});
 
-      sr.reveal('.consulting_list', {
-        duration: 2000,
-        origin: 'right',
-        distance: '10px',
-      });
-      $(function () {
-        $('#WAButton').floatingWhatsApp({
-          phone: 'https://whatsapptools.app/?n=2347042943031', //WhatsApp Business phone number International format-
-          //Get it with Toky at https://toky.co/en/features/whatsapp.
-          headerTitle: 'Chat with us on WhatsApp!', //Popup Title
-          popupMessage: 'Hello, how can we help you?', //Popup Message
-          showPopup: true, //Enables popup display
-          buttonImage:
-            '<img src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/whatsapp.svg" />', //Button Image
-          //headerColor: 'crimson', //Custom header color
-          //backgroundColor: 'crimson', //Custom background button color
-          position: 'right',
-        });
-      });
-    </script>
-    <script src="js/forms.js"></script>
-  </body>
+			sr.reveal('.consulting_list', {
+				duration: 2000,
+				origin: 'right',
+				distance: '10px',
+			});
+			$(function () {
+				$('#WAButton').floatingWhatsApp({
+					phone: 'https://whatsapptools.app/?n=2347042943031', //WhatsApp Business phone number International format-
+					//Get it with Toky at https://toky.co/en/features/whatsapp.
+					headerTitle: 'Chat with us on WhatsApp!', //Popup Title
+					popupMessage: 'Hello, how can we help you?', //Popup Message
+					showPopup: true, //Enables popup display
+					buttonImage:
+						'<img src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/whatsapp.svg" />', //Button Image
+					//headerColor: 'crimson', //Custom header color
+					//backgroundColor: 'crimson', //Custom background button color
+					position: 'right',
+				});
+			});
+		</script>
+		<script src="js/forms.js"></script>
+	</body>
 </html>
